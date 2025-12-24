@@ -76,6 +76,7 @@ class DefaultStrategyTest
                 Duration.ofSeconds(1),
                 Duration.ofMillis(1),
                 Duration.ZERO,
+                Duration.ZERO,
                 Duration.ZERO
         );
         DefaultStrategy strategy = new DefaultStrategy();
@@ -100,6 +101,7 @@ class DefaultStrategyTest
                 0,
                 Duration.ofMillis(1),
                 Duration.ofMillis(100),
+                Duration.ZERO,
                 Duration.ZERO,
                 Duration.ZERO
         );

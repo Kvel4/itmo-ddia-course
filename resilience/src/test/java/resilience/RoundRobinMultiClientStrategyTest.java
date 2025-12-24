@@ -37,7 +37,8 @@ class RoundRobinMultiClientStrategyTest
                 Duration.ofSeconds(2),
                 Duration.ofMillis(100),
                 Duration.ofMillis(50),
-                Duration.ofMillis(200)
+                Duration.ofMillis(200),
+                Duration.ZERO
         );
         RoundRobinMultiClientStrategy rr = new RoundRobinMultiClientStrategy();
 
@@ -64,7 +65,8 @@ class RoundRobinMultiClientStrategyTest
                 Duration.ofSeconds(2),
                 Duration.ofMillis(100),
                 Duration.ofMillis(50),
-                Duration.ofMillis(200)
+                Duration.ofMillis(200),
+                Duration.ZERO
         );
         RoundRobinMultiClientStrategy rr = new RoundRobinMultiClientStrategy();
 
@@ -92,7 +94,8 @@ class RoundRobinMultiClientStrategyTest
                 Duration.ofSeconds(2),
                 Duration.ofMillis(50),
                 Duration.ofMillis(50),
-                Duration.ofMillis(200)
+                Duration.ofMillis(200),
+                Duration.ZERO
         );
         RoundRobinMultiClientStrategy rr = new RoundRobinMultiClientStrategy();
 
@@ -116,7 +119,8 @@ class RoundRobinMultiClientStrategyTest
                 Duration.ofMillis(30),
                 Duration.ofMillis(50),
                 Duration.ofMillis(50),
-                Duration.ofMillis(200)
+                Duration.ofMillis(200),
+                Duration.ZERO
         );
         RoundRobinMultiClientStrategy rr = new RoundRobinMultiClientStrategy();
 

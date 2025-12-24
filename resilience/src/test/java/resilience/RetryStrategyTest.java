@@ -111,6 +111,7 @@ class RetryStrategyTest
                 Duration.ofMillis(30),
                 Duration.ofMillis(20),
                 Duration.ZERO,
+                Duration.ZERO,
                 Duration.ZERO
         );
         RetryStrategy strategy = new RetryStrategy();

@@ -34,7 +34,8 @@ class ExponentialBackoffRetryStrategyTest
                 Duration.ofSeconds(2),
                 Duration.ofMillis(100),
                 Duration.ofMillis(50),
-                Duration.ofMillis(200)
+                Duration.ofMillis(200),
+                Duration.ZERO
         );
         ExponentialBackoffRetryStrategy strategy = new ExponentialBackoffRetryStrategy();
 
@@ -59,7 +60,8 @@ class ExponentialBackoffRetryStrategyTest
                 Duration.ofMillis(150),
                 Duration.ofMillis(50),
                 Duration.ofMillis(30),
-                Duration.ofMillis(200)
+                Duration.ofMillis(200),
+                Duration.ZERO
         );
         ExponentialBackoffRetryStrategy strategy = new ExponentialBackoffRetryStrategy();
 
@@ -84,7 +86,8 @@ class ExponentialBackoffRetryStrategyTest
                 Duration.ofMillis(150),
                 Duration.ofMillis(50),
                 Duration.ofMillis(30),
-                Duration.ofMillis(200)
+                Duration.ofMillis(200),
+                Duration.ZERO
         );
         ExponentialBackoffRetryStrategy strategy = new ExponentialBackoffRetryStrategy();
 

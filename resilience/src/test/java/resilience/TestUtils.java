@@ -14,7 +14,8 @@ public class TestUtils {
                 Duration.ofSeconds(2),
                 Duration.ofMillis(100),
                 Duration.ofMillis(50),
-                Duration.ofMillis(200)
+                Duration.ofMillis(200),
+                Duration.ofMillis(50)
         );
     }
 
@@ -25,6 +26,7 @@ public class TestUtils {
                 0,
                 Duration.ofSeconds(1),
                 Duration.ofMillis(100),
+                Duration.ZERO,
                 Duration.ZERO,
                 Duration.ZERO
         );

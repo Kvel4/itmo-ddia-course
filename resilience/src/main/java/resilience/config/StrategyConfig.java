@@ -14,6 +14,8 @@ public class StrategyConfig
     public final Duration backoffBase;
     public final Duration backoffCap;
 
+    public final Duration hedgingDelay;
+
     public StrategyConfig(
             int fastErrorsBudget,
             int failuresBudget,
@@ -21,7 +23,8 @@ public class StrategyConfig
             Duration latencyBudget,
             Duration subrequestLatencyBudget,
             Duration backoffBase,
-            Duration backoffCap
+            Duration backoffCap,
+            Duration hedgingDelay
     )
     {
         this.fastErrorsBudget = fastErrorsBudget;
@@ -31,5 +34,6 @@ public class StrategyConfig
         this.subrequestLatencyBudget = subrequestLatencyBudget;
         this.backoffBase = backoffBase;
         this.backoffCap = backoffCap;
+        this.hedgingDelay = hedgingDelay;
     }
 }
