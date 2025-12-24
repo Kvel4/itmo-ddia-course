@@ -1,0 +1,26 @@
+name: Autograding
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  grade:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Run tests via autograder
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: "Gradle tests"
+          command: "./gradlew test --no-daemon"
+          timeout: "10"
+          max-score: "100"
